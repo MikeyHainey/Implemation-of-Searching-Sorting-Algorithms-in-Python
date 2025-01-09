@@ -1,9 +1,6 @@
 ## Sorting and Searching Algorithms
 
 
-
-
-
 ##Purpose: Sort an array using the Selection sort algorithm.
 ##Best Case: O(n^2)
 def selectionSort(userlist):
@@ -31,9 +28,6 @@ def selectionSort(userlist):
     print(f"The list at {iterationCount} iterations using Selection Sort: {userlist}")
 
     return userlist
-
-
-
 
 ##Purpose: Sort an array using the Bubble sort algorithm.
 ##Best Case: O(n^2)
@@ -66,9 +60,6 @@ def bubbleSort(userlist):
     print(f"The list at {iterationCount} iterations using Bubble Sort: {userlist}")
 
     return userlist  ##Return the sorted list
-
-
-
 
 ##Purpose: Sort an array using the insertion sort algorithm.
 ##Best Case: O(n^2)
@@ -157,7 +148,8 @@ def quickSort(userlist):
         return quickSort(less_than_pivot) + equal_to_pivot + quickSort(greater_than_pivot)
 
 
-    
+## Purpose: Search the user's list for an integer.
+## Best Case: O(1), Worst Case: O(n)    
 def linearSearch(userlist):
 
     userElement = int(input("Enter an integer you would like to find in the list: "))
@@ -222,8 +214,7 @@ def binarySearch(userlist):
 
 
 
-##Purpose: Determines both the min and max values of a list
-##Best Case: O(n)
+## Purpose: Determines both the min and max values of a list
 def minMaxAlgorithm(userlist):
 
     ##Assigns currentmin and currentmax with the first element of the user list
@@ -249,7 +240,7 @@ def minMaxAlgorithm(userlist):
 
 
 
-##Main function
+
 ## Main function
 def main():
     while True:
